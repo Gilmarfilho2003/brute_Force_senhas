@@ -10,7 +10,12 @@ print('''
 
               ''')
 
-               deseja gerar sua senha 
+
+
+do = input('''
+  
+  
+             deseja gerar sua senha 
                  1- completo
     
     if do == '1':
@@ -27,4 +32,9 @@ for i in range(tamanho):
 
 
 print (senha) 
+
+
+
+
+
 
