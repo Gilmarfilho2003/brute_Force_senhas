@@ -1,39 +1,15 @@
-print('''
- 
-                     __         
-   ________  ____  / /_  ____ _
-  / ___/ _ \/ __ \/ __ \/ __ `/
- (__  )  __/ / / / / / / /_/ / 
-/____/\___/_/ /_/_/ /_/\__,_/  
-                               
+
+import string,random
+ram =[]
+for i in range(10000):
+	senha = ''
+	for i in range(10):
+		senha+= random.choice(string.digits+' ')
+	if not senha in ram:
+		ram.append(senha)
+		print(senha)
 
 
-              ''')
-
-
-
-do = input('''
-  
-  
-             deseja gerar sua senha 
-                 1- completo
-    
-    if do == '1':
-
-from random import choice
-import string
-
-tamanho = 10
-list
-valores = string.ascii_lowercase + string.digits
-senha = ''
-for i in range(tamanho):
- senha += choice(valores)
-
-
-print (senha) 
-
-#####################
 
 
 
