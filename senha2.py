@@ -1,7 +1,9 @@
-import os, random, string
-
-length = 13
-chars = string.ascii_letters + string.digits + 'abcdefghijklmnoprstuvwxyz!@#$%^&*()'
-random.seed = (os.urandom(1024))
-
-print ''.join(random.choice(chars) for i in range(length))
+import string,random
+ram =[]
+for i in range(10000):
+	senha = ''
+	for i in range(10):
+		senha+= random.choice(string.digits+' ')
+	if not senha in ram:
+		ram.append(senha)
+		print(senha)
